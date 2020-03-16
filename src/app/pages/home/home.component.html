@@ -1,15 +1,14 @@
-<div class="pageMain">
+<div class="homeMain">
     <div class="left">
         <div class="wrap">
             <ul class="ul-wrap" nz-menu nzMode="inline">
-                <li nz-menu-item nz-tooltip nzSelected>
-                    <span>全部文件</span>
-                </li>
-                <li nz-menu-item nz-tooltip>
-                    <span>我的分享</span>
+                <li *ngFor="let item of homeTitles" nz-menu-item nz-tooltip [nzSelected]="currentTitle === item.name" [routerLink]="item.rout">
+                    <span>{{item.name}}</span>
                 </li>
             </ul>
         </div>
     </div>
-    <div class="right"></div>
+    <div class="right">
+        <router-outlet></router-outlet>
+    </div>
 </div>
