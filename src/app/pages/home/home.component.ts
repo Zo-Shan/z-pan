@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
   isCollapsed = false;
   homeTitles = [
-    { name: '全部文件', rout: '/home', },
-    { name: '我的分享', rout: '/home/myShare' }
+    { name: '全部文件', rout: './allfile', },
+    { name: '我的分享', rout: './myShare' }
   ];
   currentTitle = '全部文件';
   constructor() { }

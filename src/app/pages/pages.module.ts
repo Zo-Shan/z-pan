@@ -9,6 +9,10 @@ import { ShareItModule } from './share-it/share-it.module';
   imports: [
     // HomeModule,
     // ShareItModule
+  ],
+  exports: [
+    // HomeModule,
+    // ShareItModule
   ]
 })
 export class PagesModule { }

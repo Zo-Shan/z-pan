@@ -28,7 +28,7 @@ const routes: Routes = [
       },
       {
         path: '**',
-        redirectTo: '/allfile'
+        redirectTo: 'allfile'
       }
     ]
   }
