@@ -13,6 +13,11 @@ const routes: Routes = [
     children: [
       {
         path: '',
+        redirectTo: 'allfile',
+        pathMatch: 'full'
+      },
+      {
+        path: 'allfile',
         component: AllFileComponent,
         data: { title: '全部文件' }
       },
@@ -21,6 +26,10 @@ const routes: Routes = [
         component: MyShareComponent,
         data: { title: '我的分享' }
       },
+      {
+        path: '**',
+        redirectTo: '/allfile'
+      }
     ]
   }
 ];

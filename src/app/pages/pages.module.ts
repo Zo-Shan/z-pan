@@ -7,8 +7,8 @@ import { ShareItModule } from './share-it/share-it.module';
 @NgModule({
   declarations: [],
   imports: [
-    HomeModule,
-    ShareItModule
+    // HomeModule,
+    // ShareItModule
   ]
 })
 export class PagesModule { }
